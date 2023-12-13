@@ -1,14 +1,6 @@
-# React Template
+# Portfolio Project
 
-This template provides the tools needed to create React based frontend applications.
-
-It includes:
-- React + TypeScript Support 
-- SWC Compilation 
-- Eslint + Prettier 
-- Testing using Vitest and Jest 
-- Mantine Components and Theming
-- React Routing
+This is my attempt to redo my portfolio from scratch and learn some extra skills along the way. 
 
 To run in dev:
 
