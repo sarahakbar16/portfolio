@@ -1,12 +1,7 @@
-import { Title, Button } from '@mantine/core';
+import '../scss/Home.scss';
 
 function Home() {
-  return (
-    <div className="Home">
-      <Title>Home Page</Title>
-      <Button>Click Me!</Button>
-    </div>
-  );
+  return <div className="Home">Home</div>;
 }
 
 export default Home;

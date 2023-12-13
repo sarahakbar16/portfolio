@@ -1,0 +1,28 @@
+.Layout {
+    display:flex; 
+    .items {
+        display:flex; 
+        width: max-content;
+
+        .home-container {
+            background-color: black;
+            height: 100vh;
+            width: 50px;
+            position: relative;
+        }
+
+        .work-container {
+            background-color: blue;
+            height: 100vh;
+            width: 50px;
+            position: relative;
+        }
+        .projects-container {
+            background-color: red;
+            height: 100vh;
+            width: 50px;
+            position: relative;
+        }
+    }
+
+}
