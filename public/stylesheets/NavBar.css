@@ -1,0 +1,103 @@
+.nav {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.nav .navbar-item:nth-child(3n+1) {
+  background-color: #004d99;
+}
+.nav .navbar-item {
+  height: 100vh;
+  padding: 60px 5px;
+  min-width: 60px;
+  width: 60px;
+  position: relative;
+  will-change: width;
+  cursor: pointer;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+.nav .navbar-item .navbar-text {
+  color: white;
+  transform: rotate(-90deg);
+  width: max-content;
+  font-size: 40px;
+  white-space: nowrap;
+}
+.nav .navbar-item.open {
+  width: 100%;
+}
+.nav .navbar-item.open .navbar-text {
+  visibility: hidden;
+}
+.nav .navbar-item:nth-child(3n+2) {
+  background-color: #0066cc;
+}
+.nav .navbar-item {
+  height: 100vh;
+  padding: 60px 5px;
+  min-width: 60px;
+  width: 60px;
+  position: relative;
+  will-change: width;
+  cursor: pointer;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+.nav .navbar-item .navbar-text {
+  color: white;
+  transform: rotate(-90deg);
+  width: max-content;
+  font-size: 40px;
+  white-space: nowrap;
+}
+.nav .navbar-item.open {
+  width: 100%;
+}
+.nav .navbar-item.open .navbar-text {
+  visibility: hidden;
+}
+.nav .navbar-item:nth-child(3n+3) {
+  background-color: #0080ff;
+}
+.nav .navbar-item {
+  height: 100vh;
+  padding: 60px 5px;
+  min-width: 60px;
+  width: 60px;
+  position: relative;
+  will-change: width;
+  cursor: pointer;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+.nav .navbar-item .navbar-text {
+  color: white;
+  transform: rotate(-90deg);
+  width: max-content;
+  font-size: 40px;
+  white-space: nowrap;
+}
+.nav .navbar-item.open {
+  width: 100%;
+}
+.nav .navbar-item.open .navbar-text {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=NavBar.css.map */
