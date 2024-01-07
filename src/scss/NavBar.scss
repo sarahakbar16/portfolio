@@ -1,0 +1,84 @@
+$base-color: #036;
+
+.nav {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+
+    @for $i from 1 through 3 {
+        .navbar-item:nth-child(3n + #{$i}) {
+            background-color: lighten($base-color, $i * 10%);
+
+        }
+
+        .navbar-item {
+            height: 100vh;
+            padding: 60px 5px;
+            min-width: 60px;
+            width: 60px;
+            position: relative;
+            will-change: width;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-decoration: none;
+            transition-delay: s;
+            transition: 2s;
+
+            .navbar-text {
+
+                color: white;
+                transform: rotate(-90deg);
+                width: max-content;
+                font-size: 40px;
+                white-space: nowrap;
+                will-change: visibility; 
+                visibility: visible;  
+                transition: visibility 2s; 
+
+            }
+
+        }
+
+
+        .navbar-item.open {
+            width: 100%;
+            transition: 2s;
+
+            .navbar-text {
+
+                visibility: hidden;
+
+            }
+        }
+
+        .navbar-item.closing{
+            width: 60px; 
+            transition: 2s; 
+        }
+
+        @starting-style {
+            .navbar-item.open {
+              width: 60px;
+              .navbar-text {
+                visibility: visible; 
+                }
+            }
+            .navbar-item.closing {
+                width: 100%; 
+            }
+
+            
+          }
+
+
+
+    }
+
+}
