@@ -10,7 +10,7 @@ function NavBar() {
     <div className="nav">
       <Link
         className={`navbar-item ${pathname === '/' ? 'open' : 'closed'} ${
-          state.prevPath === '/' ? 'closing' : 'static'
+          state && state.prevPath === '/' ? 'closing' : 'static'
         }`}
         to="/"
         state={{ prevPath: location.pathname }}
@@ -21,7 +21,9 @@ function NavBar() {
         className={`navbar-item ${
           pathname === '/workexperience' ? 'open' : 'closed'
         }
-        ${state.prevPath === '/workexperience' ? 'closing' : 'static'}`}
+        ${
+          state && state.prevPath === '/workexperience' ? 'closing' : 'static'
+        }`}
         to="/workexperience"
         state={{ prevPath: location.pathname }}
       >
@@ -30,7 +32,7 @@ function NavBar() {
       <Link
         className={`navbar-item ${
           pathname === '/projects' ? 'open' : 'closed'
-        } ${state.prevPath === '/projects' ? 'closing' : 'static'}
+        } ${state && state.prevPath === '/projects' ? 'closing' : 'static'}
         `}
         to="/projects"
         state={{ prevPath: location.pathname }}
